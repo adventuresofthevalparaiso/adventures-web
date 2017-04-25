@@ -1,7 +1,7 @@
 <template>
     <div class="hello">
         <h1>{{ msg }}</h1>
-        <h2>Go create something awesome.</h2>
+        <h2>Let's do this.</h2>
     </div>
 </template>
 
@@ -10,7 +10,7 @@ export default {
     name: 'hello',
     data () {
         return {
-            msg: 'Hello world :)'
+            msg: 'Pojos! :)'
         }
     }
 }
