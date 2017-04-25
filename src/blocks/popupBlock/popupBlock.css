@@ -1,0 +1,44 @@
+.popupblock:nth-child(5n+5) {
+    margin-right: 0;
+}
+
+.popupblock {
+    box-shadow: none !important;
+    height: 160px;
+    vertical-align: top;
+    width: 18.4%;
+
+    figure {
+        cursor: pointer;
+        height: 160px;
+        overflow: hidden;
+        position: relative;
+        figcaption {
+            background-color: rgba(96, 136, 84, 0.7);
+            bottom: 0;
+            color: white;
+            font-weight: 600;
+            font-size: 0.8rem;
+            padding: 5px;
+            position: absolute;
+            text-align: center;
+            width: 100%;
+        }
+        img {
+            backface-visibility: hidden;
+            bottom: 0;
+            filter: grayscale(60%);
+            left: 0;
+            margin: auto;
+            max-width: 100%;
+            position: absolute;
+            right: 0;
+            top: 0;
+            transition: all 0.3s;
+            will-change: transform, filter;
+            &:hover {
+                filter: grayscale(0%);
+            }
+        }
+    }
+}

@@ -1,0 +1,44 @@
+.banner {
+    background: #5b5c5e;
+    border: 1px solid white;
+    color: white;
+    font-family: 'Lato';
+    height: 127px;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+
+    img {
+        backface-visibility: hidden;
+        bottom: -100em;
+        left: -100em;
+        margin: auto;
+        position: absolute;
+        right: -100em;
+        top: -100em;
+        will-change: transform;
+    }
+
+    figcaption {
+        font-size: 1.4rem;
+        font-style: italic;
+        font-weight: 300;
+        line-height: 1.5;
+        opacity: .9;
+        position: absolute;
+        right: 30px;
+        top: 20px;
+
+        .quote {
+            font-family: 'Catamaran';
+            font-size: 1.2em;
+        }
+
+        .credit {
+            display: block;
+            font-size: 0.8em;
+            margin-right: 20px;
+            text-align: right;
+        }
+    }
+}
