@@ -13,7 +13,9 @@
     "lint": "eslint --ext .js,.vue src test/unit/specs test/e2e/specs build config"
   },
   "jest": {
-    "testMatch": ["**/test/unit/**/*.spec.js"],
+    "testMatch": [
+      "**/test/unit/**/*.spec.js"
+    ],
     "moduleNameMapper": {
       "src/components/([^\\.]*)$": "<rootDir>/src/components/$1.vue",
       "^vue$": "vue/dist/vue.common.js",
@@ -28,7 +30,8 @@
   "dependencies": {
     "vue": "^2.2.1",
     "vue-router": "^2.3.0",
-    "vuex": "^2.1.2"
+    "vuex": "^2.1.2",
+    "youtube-iframe": "^1.0.3"
   },
   "devDependencies": {
     "autoprefixer": "^6.7.2",

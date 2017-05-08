@@ -1,0 +1,19 @@
+@import 'reset.scss';
+@import 'icomoon.scss';
+@import 'typography.scss';
+
+* {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    box-sizing: border-box;
+    text-rendering: geometricPrecision;
+}
+*, *::before, *::after { box-sizing: inherit; }
+
+html {
+    font-family: 'Ubuntu', sans-serif;
+    min-height: 100%;
+    position: relative;
+    box-sizing: border-box;
+    overflow: initial;
+}

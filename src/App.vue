@@ -1,26 +1,20 @@
 <template>
     <div id="app">
-        <img src="./assets/logo.png" id="logo">
+        <SiteHeader></SiteHeader>
         <router-view></router-view>
+        <SiteFooter></SiteFooter>
     </div>
 </template>
 
 <script>
+import SiteHeader from 'components/SiteHeader.vue'
+import SiteFooter from 'components/SiteFooter.vue'
 export default {
+    components: { SiteHeader, SiteFooter },
     name: 'app'
 }
 </script>
 
 <style lang="scss">
-#app {
-    font-family: 'Avenir', Helvetica, Arial, sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    text-align: center;
-    color: #2c3e50;
-    margin-top: 60px;
-    #logo {
-        width: 200px;
-    }
-}
+@import 'style/main.scss';
 </style>
