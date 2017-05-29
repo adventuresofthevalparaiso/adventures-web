@@ -3,7 +3,7 @@
         <div>
             <SiteMenu></SiteMenu>
         </div>
-        <h1>Adventures of the Valparaiso</h1>
+        <h1>{{ $config.Site.title }}</h1>
         <div>
             <Calendar></Calendar>
         </div>
@@ -17,7 +17,8 @@
         components: { SiteMenu, Calendar },
         name: 'header',
         data: () => ({
-            scrollTop: 0
+            scrollTop: 1,
+            timeout: 2000
         }),
         methods: {
             onScroll (event) {
@@ -28,6 +29,18 @@
             window.addEventListener('scroll', event => {
                 this.onScroll(event)
             })
+            this.$el.addEventListener('mouseover', event => {
+                this.scrollTop = 1
+            })
+            this.$el.addEventListener('mouseout', event => {
+                const scrollTop = window.pageYOffset || document.documentElement.scrollTop
+                if (scrollTop === 0) {
+                    this.scrollTop = 0
+                }
+            })
+            setTimeout(() => {
+                this.scrollTop = 0
+            }, this.timeout)
         }
     }
 </script>
@@ -44,12 +57,12 @@
         background-color: $color-offwhite;
         height: 70px;
         line-height: 65px;
-        transition: opacity 1s;
+        transition: opacity 4s;
         h1 {
             font-weight: 200;
         }
         &.faded {
-            opacity: 0.7;
+            opacity: 0;
         }
     }
 </style>

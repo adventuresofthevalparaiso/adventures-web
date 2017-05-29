@@ -1,3 +1,5 @@
+// todo: this needs to render the upcoming event and show the rest on click
+
 <template>
     <aside class="calendar">
         <figure>

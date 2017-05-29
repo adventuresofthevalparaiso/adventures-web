@@ -1,6 +1,6 @@
 <template>
     <section class="splash">
-        <VideoElement type="youtube" id="5QjVeH2Z57E" :config="videoConfig"></VideoElement>
+        <VideoElement type="youtube" id="bpOSxM0rNPM" :config="videoConfig"></VideoElement>
     </section>
 </template>
 
@@ -17,7 +17,8 @@
                 showinfo: 0,
                 autohide: 1,
                 modestbranding: 1,
-                rel: 0
+                rel: 0,
+                muted: 0
             }
         })
     }

@@ -24,7 +24,9 @@
         },
         methods: {
             onPlayerReady () {
-                this.player.mute()
+                if (this.config.muted) {
+                    this.player.mute()
+                }
             }
         },
         mounted () {

@@ -2,7 +2,8 @@
 import 'babel-polyfill'
 import Vue from 'vue'
 
-Vue.config.productionTip = false
+import config from './config'
+Vue.config.productionTip = config.Vue.productionTip
 
 // Services
 import { sync } from 'vuex-router-sync'
@@ -18,7 +19,7 @@ import App from './App'
 window.Event = new Vue()
 
 new Vue({
-    el: '#app',
+    el: config.Vue.el,
     router,
     store,
     template: '<App/>',

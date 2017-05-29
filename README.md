@@ -17,7 +17,7 @@ Because we're building components, there's an exponential growth in progress. Th
 > Webdev meeting. With the homepage finished, we should take a moment to discuss how to proceed and set priorities. At this point we can also expand this roadmap.
 
 #### Setup and usage
-At minimum, you need *node* and *npm* installed
+At minimum, you need *node* and *npm* installed.
 ```sh
 # install node modules
 $ npm i
