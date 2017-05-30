@@ -1,3 +1,6 @@
+// Immutable data and CMS-controlled data comes from here
+// mutable application state resides in the vuex store
+
 import Vue from 'vue'
 
 const config = {
